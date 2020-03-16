@@ -167,7 +167,7 @@ a:visited:active {
 
 .proj2 {
     grid-area: proj2;
-    background-image: url('../images/photo.jpg');
+    background-color: var(--ch-lightblue);
     background-position: center bottom;
     display: grid;
     align-items: end;
@@ -177,7 +177,7 @@ a:visited:active {
 
 .proj3 {
     grid-area: proj3;
-    background-image: url('../images/photo.jpg');
+    background-color: var(--ch-green);
     background-position: right top;
     display: grid;
     align-items: end;
@@ -187,7 +187,7 @@ a:visited:active {
 
 .proj4 {
     grid-area: proj4;
-    background-image: url('../images/photo.jpg');
+    background-color: var(--ch-orange);
     background-position: right bottom;
     display: grid;
     align-items: end;
