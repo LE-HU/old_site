@@ -15,10 +15,11 @@
     <header class="header">
         <nav class="navbar">
             <ul class="navitemsleft">
-                <li>Home</li>
+                <li><a href="/">Home</a></Home>
+                </li>
                 <li>Projects</li>
                 <li>About</li>
-                <li>Contact</li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <h1 class="nav-header">
                 le-hu.github.io/website/</h1>
@@ -33,15 +34,15 @@
 
     <main class="container">
         <section class="projects">
-            <h2 class="projects-header">Wojciech Lech</h2>
-            <p class="projects-paragraph">junior software developer/QA based in Kraków</p>
+            <h2 class="about-header">Wojciech Lech</h2>
+            <p class="about-paragraph">junior software developer/QA based in Kraków</p>
             <article class="projects-boxes">
-                <p class="box proj1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="box proj2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="box proj3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="box proj4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <aside class="aside-proj-tech">
-                    <p class="proj">
+                <p class="box proj1">Project</p>
+                <p class="box proj2">Project</p>
+                <p class="box proj3">Project</p>
+                <p class="box proj4">Project</p>
+                <aside class="aside-projdesc-tech">
+                    <p class="projdesc">
                         Showcase of noncommercial projects done to bolster my skills in software engineering
                     </p>
                     <p class="tech">
@@ -51,18 +52,25 @@
                         <i class="fab fa-js fa-3x"></i>
                         #cypress
                         <i class="fab fa-git fa-3x"></i>
-                        <i class="fab fa-python fa-lg"></i>
+                        <i class="fab fa-python fa-2x"></i>
                         #SQL
                     </p>
                 </aside>
 
             </article>
+        </section>
 
-
-            <section class="contact">
-                <h3 class="contact-header">Contact</h3>
-                <p class="contact-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </section>
+        <section id="contact">
+            <h3 class="contact-header">Contact</h3>
+            <p class="contact-p">Feel free to contact me via social networks, or directly via email using this form:</p>
+            <div class="contact-form-wrapper">
+                <form action="" class="contact-form">
+                        <input class="email-box" type="email" name="email" placeholder="your@email.com">
+                        <input class="submit-button" type="submit" value="Send" name="send">
+                        <textarea class="message-box" rows="3" placeholder="message..."></textarea>
+                </form>
+            </div>
+        </section>
 
     </main>
     <footer class="footer-main">
@@ -73,25 +81,3 @@
 
 </html>
 
-<!--
-szary - #797a7e
-fiolet - #572f90
-żółty - #fed30a
-zielony - #0db24c
-niebieski - #1ca9e1
-pomarańcz - #f48221
-
-
-
-                <aside class="tech-stack">
-                    <p>TECH STACK
-                        <i class="fab fa-html5 fa-3x"></i>
-                        <i class="fab fa-css3-alt fa-3x"></i>
-                        <i class="fab fa-js fa-3x"></i>
-                        #cypress
-                        <i class="fab fa-git fa-3x"></i>
-                        <i class="fab fa-python fa-lg"></i>
-                        #SQL
-                    </p>
-                </aside>
--->
