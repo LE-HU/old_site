@@ -2,10 +2,11 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto', arial;
-    font-size: 25px;
+    font-size: 21px;
 }
 
 .header {
+    background-color: #000;
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
@@ -18,19 +19,20 @@
 }
 
 .navbar {
-    display: flex;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "a b c d e";
     justify-content: space-around;
     align-items: stretch;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    /* required */
+    border-bottom: 1px solid;
 }
 
 .navitemsleft {
-    flex: 1 0 33%;
-    text-align: right;
-    background-color: #f48221;
+    grid-area: b;
+    text-align: left;
+    background-color: #000;
+    color: #FFF;
 }
 
 .navitemsleft li {
@@ -38,16 +40,19 @@
     padding: 0 0.2em;
 }
 
-.mid-header {
-    flex: 1 0 33%;
+.nav-header {
+    grid-area: c;
     text-align: center;
-    background-color: #0db24c;
+    background-color: #000;
+    color: #FFF;
+    font-weight: normal;
 }
 
 .navitemsright {
-    flex: 1 0 33%;
-    text-align: left;
-    background-color: #1ca9e1;
+    grid-area: d;
+    text-align: right;
+    background-color: #000;
+    color: #FFF;
 }
 
 .navitemsright li {
@@ -55,60 +60,124 @@
     padding: 0 0.2em;
 }
 
+/*
 .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    text-align: justify;
+    margin: 20px 0px;
+}
+*/
 
+.projects-header {
+    padding-top: 21px;
+}
+
+.projects-paragraph {
+    padding: 21px 0px;
 }
 
 .projects-boxes {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "proj1 proj2 aside"
-        "proj3 proj4 aside"
-        "proj5 proj6 proj7";
+        "proj1 proj2 desc"
+        "proj3 proj4 y"
+        "proj5 x x";
     grid-gap: 0.2em 0.4em;
 }
 
-.projects-boxes p {
-    padding: 150px 0px;;
+.box {
+    min-height: 400px;
+    color: #FFF;
+    text-align: center;
+}
+
+.aside-proj-tech {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+                        "desc"
+                        "tech";
+    grid-area: desc;
+    grid-gap: 0.2em 0.4em;
     color: #FFF;
 }
 
-.aside-about {
-    grid-area: aside;
-    justify-self: center;
-    align-self: center;
+.proj {
+    grid-area: desc;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 21px;
     background-color: #572f90;
 }
 
-.aside-about p {
-    background-color: #572f90;
+.tech {
+    grid-area: tech;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 21px;
+    background-color: #fed30a;
 }
 
 .proj1 {
     grid-area: proj1;
     background-image: url('../images/photo.jpg');
     background-position: center top;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 21px;
 }
 
 .proj2 {
     grid-area: proj2;
     background-image: url('../images/photo.jpg');
     background-position: center bottom;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 21px;
 }
 
 .proj3 {
     grid-area: proj3;
     background-image: url('../images/photo.jpg');
     background-position: right top;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 21px;
 }
 
 .proj4 {
     grid-area: proj4;
     background-image: url('../images/photo.jpg');
     background-position: right bottom;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 21px;
+}
+
+.contact-header {
+    padding-top: 25px;
+}
+
+.contact-paragraph {
+    padding: 25px 0px;
+}
+.footer-main {
+    background-color: #000;
+    bottom: 0px;
+}
+
+.footer-main p {
+    text-align: center;
+    color: white;
 }
 
 /*
@@ -120,14 +189,16 @@
 	padding:0.2em;
 	box-sizing: border-box;
 }
+
+
+.tech-stack {
+    grid-area: tech;
+    justify-self: center;
+    align-self: center;
+    background-color: #fed30a;
+}
+
+.tech-stack p {
+    color: black;
+}
 */
-
-.footer-main {
-    background-color: gray;
-    bottom: 0px;
-}
-
-.footer-main p {
-    text-align: center;
-    color: white;
-}
