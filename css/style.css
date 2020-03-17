@@ -3,8 +3,11 @@
     --ch-yellow: #fed30a;
     --ch-gray: #797a7e;
     --ch-lightblue: #1ca9e1;
+    --ch-darkblue: #0c77b0;
     --ch-green: #0db24c;
+    --ch-darkgreen: #08821c;
     --ch-orange: #f48221;
+    --ch-darkorange: #c45201;
 }
 
 * {
@@ -107,7 +110,7 @@ a:visited:active {
 }
 
 .about-header:hover {
-    transform: rotate(-0.5deg);
+
 }
 
 .about-paragraph {
@@ -118,7 +121,7 @@ a:visited:active {
 }
 
 .about-paragraph:hover {
-    transform: rotate(-0.2deg);
+
 }
 
 .projects-boxes {
@@ -138,21 +141,13 @@ a:visited:active {
     color: #FFF;
     text-align: center;
     transition: all 0.2s;
-    box-shadow:
-    1px 1px #000000,
-    2px 2px #000000,
-    3px 3px #000000,
-    4px 4px #000000,
-    5px 5px #000000,
-    6px 6px #000000,
-    7px 7px #000000,
-    0px 0px 7px 1px rgba(158,147,158,1);
+
 }
 
 .box:hover {
     box-shadow: none;
-    -webkit-transform: translate(7px, 7px);
-    transform: translate(7px, 7px);
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
 }
 
 .aside-projdesc-tech {
@@ -178,7 +173,7 @@ a:visited:active {
 }
 
 .projdesc:hover {
-    transform: rotate(-0.5deg);
+
 }
 
 .tech {
@@ -190,12 +185,13 @@ a:visited:active {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 21px;
+    color: #000;
     background-color: var(--ch-yellow);
     transition: transform 0.01s;
 }
 
 .tech:hover {
-    transform: rotate(-0.5deg);
+
 }
 
 .proj1 {
@@ -205,7 +201,13 @@ a:visited:active {
     display: grid;
     align-items: end;
     justify-items: center;
-    padding: 21px
+    padding: 21px;
+    box-shadow:
+    1px 1px #000000,
+    2px 2px #000000,
+    3px 3px #000000,
+    4px 4px #000000,
+    0px 0px 4px 1px rgba(158,147,158,1);
 }
 
 
@@ -218,6 +220,12 @@ a:visited:active {
     align-items: end;
     justify-items: center;
     padding: 21px;
+    box-shadow:
+    1px 1px var(--ch-darkblue),
+    2px 2px var(--ch-darkblue),
+    3px 3px var(--ch-darkblue),
+    4px 4px var(--ch-darkblue),
+    0px 0px 4px 1px rgba(158,147,158,1);
 }
 
 .proj3 {
@@ -228,6 +236,12 @@ a:visited:active {
     align-items: end;
     justify-items: center;
     padding: 21px;
+    box-shadow:
+    1px 1px var(--ch-darkgreen),
+    2px 2px var(--ch-darkgreen),
+    3px 3px var(--ch-darkgreen),
+    4px 4px var(--ch-darkgreen),
+    0px 0px 4px 1px rgba(158,147,158,1);
 }
 
 .proj4 {
@@ -238,6 +252,12 @@ a:visited:active {
     align-items: end;
     justify-items: center;
     padding: 21px;
+    box-shadow:
+    1px 1px var(--ch-darkorange),
+    2px 2px var(--ch-darkorange),
+    3px 3px var(--ch-darkorange),
+    4px 4px var(--ch-darkorange),
+    0px 0px 4px 1px rgba(158,147,158,1);
 }
 
 #contact-box {
@@ -255,7 +275,7 @@ a:visited:active {
 }
 
 #contact-box:hover {
-    transform: rotate(-0.5deg);
+
 }
 
 .contact-header {
@@ -346,6 +366,10 @@ a:visited:active {
 
 .box:hover {
     transform: scale(1.02) rotate(1deg);
+}
+
+#contact-box:hover {
+    transform: rotate(-0.5deg);
 }
 */
 
