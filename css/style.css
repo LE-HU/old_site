@@ -1,7 +1,10 @@
 :root {
     --ch-violet: #572f90;
+    --ch-darkviolet: #351b70;
     --ch-yellow: #fed30a;
+    --ch-darkyellow: #dca108;
     --ch-gray: #797a7e;
+    --ch-darkgray: #57585a;
     --ch-lightblue: #1ca9e1;
     --ch-darkblue: #0c77b0;
     --ch-green: #0db24c;
@@ -147,6 +150,16 @@ a:visited:active {
     transform: translate(4px, 4px);
 }
 
+.smallbox {
+    transition: all 0.2s;
+}
+
+.smallbox:hover {
+    box-shadow: none;
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+}
+
 .aside-projdesc-tech {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -166,7 +179,12 @@ a:visited:active {
     justify-items: center;
     padding: 21px;
     background-color: var(--ch-violet);
-    transition: transform 0.01s;
+    box-shadow:
+        1px 1px var(--ch-darkviolet),
+        2px 2px var(--ch-darkviolet),
+        3px 3px var(--ch-darkviolet),
+        4px 4px var(--ch-darkviolet),
+        0px 0px 4px 1px rgba(158, 147, 158, 1);
 }
 
 .projdesc:hover {}
@@ -182,7 +200,12 @@ a:visited:active {
     padding: 21px;
     color: #000;
     background-color: var(--ch-yellow);
-    transition: transform 0.01s;
+    box-shadow:
+        1px 1px var(--ch-darkyellow),
+        2px 2px var(--ch-darkyellow),
+        3px 3px var(--ch-darkyellow),
+        4px 4px var(--ch-darkyellow),
+        0px 0px 4px 1px rgba(158, 147, 158, 1);
 }
 
 .tech:hover {}
@@ -262,12 +285,19 @@ a:visited:active {
     justify-items: center;
     text-align: center;
     color: #000;
-    transition: transform 0.01s;
-    border: 4px solid;
+     border: 4px solid;
     border-color: var(--ch-gray);
+    box-shadow:
+        1px 1px var(--ch-darkgray),
+        2px 2px var(--ch-darkgray),
+        3px 3px var(--ch-darkgray),
+        4px 4px var(--ch-darkgray),
+        0px 0px 4px 1px rgba(158, 147, 158, 1);
 }
 
-#contact-box:hover {}
+#contact-box:hover {
+    box-shadow: none;
+}
 
 .contact-header {
     padding-top: 21px;
