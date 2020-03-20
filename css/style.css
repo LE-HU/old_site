@@ -107,6 +107,10 @@ a:visited:active {
     padding: 0 0.2em;
 }
 
+.cv {
+    color: var(--ch-orange);
+}
+
 .about-header {
     position: static;
     padding-top: 42px;
