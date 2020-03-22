@@ -146,11 +146,11 @@ a:visited:active {
 }
 
 .box {
-    position: static;
+    border-radius: 2%;
     color: #FFF;
+    position: static;
     text-align: center;
     transition: all 0.2s;
-    border-radius: 2%;
 }
 
 .box:hover {
