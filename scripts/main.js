@@ -17,7 +17,7 @@ breakerBtn.addEventListener('click', (e) => {
         .perspective = '10000px';
 
     document.querySelector('body').style
-        .transform = 'rotateX(-17deg) rotateY(59deg)';
+        .transform = 'rotateX(-17deg) rotateY(61deg)';
 
     unbreakerBtn.classList.remove('hidden');
     breakerBtn.classList.add('hidden');
