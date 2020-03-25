@@ -164,6 +164,7 @@ a:visited:active {
     grid-area: wlname;
     padding: 25px;
     padding-bottom: 0px;
+    padding-right: 0px;
 }
 
 .wl-text {
@@ -178,6 +179,7 @@ a:visited:active {
     grid-area: icons;
     padding: 25px;
     padding-bottom: 0px;
+    padding-left: 0px;
     text-align: right;
 }
 
@@ -221,8 +223,8 @@ a:visited:active {
 .tech {
     align-items: center;
     background-color: #FFF;
+    border: 1px solid #000 !important;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
-    border: 1px solid #000;
     color: #000;
     display: grid;
     grid-area: tech;
@@ -234,6 +236,7 @@ a:visited:active {
     position: static;
     border: 1px solid #FFF;
     text-align: center;
+    overflow: hidden;
 }
 
 .proj1 {
@@ -351,7 +354,7 @@ a:visited:active {
     color: var(--ch-darkorange);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .container {
         margin: auto;
         width: 80%;
@@ -369,9 +372,9 @@ a:visited:active {
             "proj2"
             "proj3"
             "proj4"
-            "contact"
-            grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.36fr 1fr 1fr;
+            "contact";
+            grid-template-columns: 1fr;
+        grid-template-rows: 0.36fr 0.18fr 0.18fr 0.72fr 1fr 1fr 1fr 1fr 0.5fr;
         padding-bottom: 50px;
         padding-top: 50px;
     }
