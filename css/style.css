@@ -20,6 +20,7 @@
     font-size: 21px;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,79 +53,11 @@ a:visited:active {
     color: var(--ch-violet);
 }
 
-/* .header {
-    background-color: #000;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    z-index: 3;
-} */
 .container {
     margin: auto;
     width: 60%;
 }
 
-/* .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "a b c d e";
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 5px 0px;
-    border-bottom: 1px solid;
-    width: 100%
-}
-
-.navitemsleft {
-    grid-area: b;
-    text-align: left;
-    background-color: #000;
-    color: #FFF;
-}
-
-.navitemsleft li {
-    display: inline;
-    padding: 0 0.2em;
-    color: var(--ch-gray)
-}
-
-.nav-header {
-    grid-area: c;
-    text-align: center;
-    background-color: #000;
-    color: #FFF;
-    font-weight: normal;
-}
-
-.navitemsright {
-    grid-area: d;
-    text-align: right;
-    background-color: #000;
-    color: #FFF;
-}
-
-.navitemsright li {
-    display: inline;
-    padding: 0 0.2em;
-}
-
-.about-header {
-    position: static;
-    padding-top: 42px;
-    transition: all 0.1s;
-}
-
-.about-header:hover {}
-
-.about-paragraph {
-    position: static;
-    padding: 21px 0px;
-    padding-bottom: 42px;
-    transition: all 0.1s;
-}
-
-.about-paragraph:hover {} */
 .cv {
     color: var(--ch-orange);
 }
@@ -135,17 +68,17 @@ a:visited:active {
     grid-template-areas:
         "navbox topbox topbox"
         "proj1 proj2 projdesc"
-        "proj3 proj4 contact"
-        "proj5 y z";
+        "proj3 proj4 contact";
+    /* "proj5 y z"; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.36fr 1fr 1fr;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
 
 .box {
     border-radius: 2%;
-    color: #fff;
+    color: #000;
     position: static;
     text-align: center;
     transition: all 0.2s;
@@ -212,10 +145,10 @@ a:visited:active {
 
 .topbox {
     border: 1px solid;
-    border-color: #fff;
+    border-color: #000;
     border-radius: 1%/4%;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
-
+    background-color: #FFF;
     display: grid;
     grid-area: topbox;
     grid-template-areas:
@@ -225,28 +158,33 @@ a:visited:active {
 }
 
 .wl-name {
-    background-color: #000;
-    color: #fff;
+    color: #000;
     grid-area: wlname;
     padding: 25px;
     padding-bottom: 0px;
 }
 
 .wl-text {
-    background-color: #000;
-    color: #fff;
+    color: #000;
     grid-area: wltext;
     padding: 25px;
     padding-top: 5px;
 }
 
 .social-icons {
-    background-color: #000;
-    color: #fff;
+    color: #000;
     grid-area: icons;
     padding: 25px;
     padding-bottom: 0px;
     text-align: right;
+}
+
+.topbox a {
+    color: #000;
+}
+
+.topbox a:visited {
+    color: #000;
 }
 
 .social-icons li {
@@ -255,7 +193,6 @@ a:visited:active {
 }
 
 .aside-projdesc-tech {
-    color: #fff;
     display: grid;
     grid-area: projdesc;
     grid-gap: 1em 1em;
@@ -267,33 +204,41 @@ a:visited:active {
 
 .projdesc {
     align-items: center;
-    background-color: var(--ch-violet);
+    background-color: #FFF;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    border: 1px solid #000;
+    color: #000;
     display: grid;
     grid-area: desc;
     justify-items: center;
     padding: 21px;
     position: static;
+    text-align: center;
 }
 
 .tech {
     align-items: center;
-    background-color: var(--ch-yellow);
+    background-color: #FFF;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    border: 1px solid #000;
     color: #000;
     display: grid;
     grid-area: tech;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 5px 5px;
     justify-items: center;
     padding: 21px;
     position: static;
+    border: 1px solid #FFF;
+    text-align: center;
 }
 
 .proj1 {
     align-items: end;
     background-image: url("../images/photo.jpg");
     background-position: center top;
+    display: grid;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     grid-area: proj1;
     justify-items: center;
@@ -334,6 +279,7 @@ a:visited:active {
 }
 
 .contact-foot {
+    color: #000;
     display: grid;
     grid-area: contact;
     grid-gap: 1em 1em;
@@ -344,28 +290,33 @@ a:visited:active {
 }
 
 #contact-box {
-    border: 1px solid;
     align-items: center;
-    align-self: flex-start;
-    background-color: #fff;
+    align-self: flex-center;
+    background-color: #FFF;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    border: 1px solid #000;
     color: #000;
     display: grid;
     grid-area: cont;
     justify-items: center;
     text-align: center;
+    padding: 21px;
 }
 
 #contact-box:hover {
     box-shadow: none;
 }
 
+.contact-p {
+    padding-top: 7px;
+}
+
 .footer-main {
     display: grid;
     grid-area: foot;
-    background-color: #000;
+    background-color: #FFF;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
-    border: 1px solid #FFF;
+    border: 1px solid #000;
     align-items: center;
     justify-items: center;
     padding: 21px;
@@ -377,17 +328,9 @@ a:visited:active {
 }
 
 .footer-main p {
-    color: white;
+    color: #000;
     padding: 5px 0px;
     text-align: center;
-}
-.contact-header {
-    padding-top: 21px;
-}
-
-.contact-p {
-    padding: 21px 0px;
-    padding-bottom: 63px;
 }
 
 .email-button {
@@ -402,64 +345,32 @@ a:visited:active {
     color: var(--ch-lightblue);
 }
 
-.email-button:active {}
-
-
-
-/*
-
-.contact-header {
-    padding-top: 25px;
+.email-button:active {
+    color: var(--ch-darkorange);
 }
 
-.contact-p {
-    padding: 25px 0px;
-}
+@media (max-width: 600px) {
+    .container {
+        margin: auto;
+        width: 80%;
+    }
 
-.contact-form-wrapper {
-    padding-bottom: 50px;
+    .projects-boxes {
+        display: grid;
+        grid-gap: 1em 1em;
+        grid-template-areas:
+            "navbox"
+            "topbox"
+            "topbox"
+            "projdesc"
+            "proj1"
+            "proj2"
+            "proj3"
+            "proj4"
+            "contact"
+            grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.36fr 1fr 1fr;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
 }
-
-.contact-form {
-    display: grid;
-    grid-gap: 1em 1em;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "email email button"
-                        "message message message"
-                        "message message message";
-}
-
-.email-box {
-    grid-area: email;
-}
-
-.message-box {
-    grid-area: message;
-}
-
-.submit-button{
-    grid-area: button;
-	background-color:#000;
-	color:#fff;
-	padding:5px;
-    border:none;
-    margin-right: auto;
-}
-
-.submit-button:hover {
-	color: var(--ch-lightblue);
-}
-
-.submit-button:active {
-    color: var(--ch-orange)
-}
-
-.box:hover {
-    transform: scale(1.02) rotate(1deg);
-}
-
-#contact-box:hover {
-    transform: rotate(-0.5deg);
-}
-*/
