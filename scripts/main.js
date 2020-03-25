@@ -22,6 +22,9 @@ breakerBtn.addEventListener('click', (e) => {
     unbreakerBtn.classList.remove('hidden');
     breakerBtn.classList.add('hidden');
 
+    unbreakerBtn.style.transition = "all 3s";
+    unbreakerBtn.style.transform = "scale(1.5)";
+
     // setTimeout(() => {
     //     document.querySelector('body').style
     //     .perspective = '0px';

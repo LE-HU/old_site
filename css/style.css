@@ -24,8 +24,9 @@
 }
 
 body {
-    background-image: url("../images/pix1-bw.jpg");
+    background-image: url("../images/pix1-bw-clar.jpg");
     background-repeat: repeat;
+    /* transform-style:preserve-3d; */
     /* perspective: 10000px;
     transform: rotateX(-17deg) rotateY(59deg); */
 }
@@ -35,11 +36,11 @@ body {
 }
 
 .breaker {
-    color: rgb(mouseX, mouseY, 10);
+
 }
 
 .unbreaker {
-    color: rgb(mouseX, mouseY, 10);
+
 }
 
 a {
@@ -406,20 +407,3 @@ a:visited:active {
     }
 }
 
-
-/* .scene {
-    width: 600px;
-    height: 600px;
-    border: 1px solid #CCC;
-    margin: 40px;
-    perspective: 10000px;
-  }
-
-  .panel {
-    width: 165px;
-    height: 165px;
-    float: left;
-    margin: 5px;
-    background: blue;
-    transform: rotateX(-15deg) rotateY(60deg);
-  } */
