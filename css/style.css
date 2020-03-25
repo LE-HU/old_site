@@ -30,7 +30,15 @@ body {
     transform: rotateX(-17deg) rotateY(59deg); */
 }
 
+.hidden {
+    display: none;
+}
+
 .breaker {
+    color: rgb(mouseX, mouseY, 10);
+}
+
+.unbreaker {
     color: rgb(mouseX, mouseY, 10);
 }
 
@@ -136,12 +144,12 @@ a:visited:active {
     grid-area: links;
     padding: 25px;
     padding-top: 5px;
+    align-self: center;
+    justify-self: center;
 }
 
 .navbox-links li {
     display: inline;
-    align-self: center;
-    justify-self: center;
 }
 
 .navbox-links li>a {
