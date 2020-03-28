@@ -11,7 +11,7 @@ let unbreakerBtn = document.querySelector('.unbreaker');
 
 breakerBtn.addEventListener('click', (e) => {
     document.querySelector('body').style
-    .transition = 'all 1s';
+        .transition = 'all 1s';
 
     document.querySelector('body').style
         .perspective = '10000px';
@@ -22,7 +22,6 @@ breakerBtn.addEventListener('click', (e) => {
     unbreakerBtn.classList.remove('hidden');
     breakerBtn.classList.add('hidden');
 
-    unbreakerBtn.style.transition = "all 3s";
     unbreakerBtn.style.transform = "scale(1.5)";
 
     // setTimeout(() => {
@@ -70,4 +69,3 @@ bodyVar.addEventListener("mousemove", (e) => {
 
 
 })
-

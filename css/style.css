@@ -35,14 +35,6 @@ body {
     display: none;
 }
 
-.breaker {
-
-}
-
-.unbreaker {
-
-}
-
 a {
     color: #fff;
     text-decoration: none;
@@ -67,6 +59,30 @@ a:visited:hover {
 a:visited:active {
     color: var(--ch-violet);
 }
+
+.proj-link {
+    color: #000;
+}
+
+.proj-link:visited {
+    color: #000;
+}
+/*
+.proj-link:hover {
+    color: var(--ch-violet);
+}
+
+.proj-link:visited:hover {
+    color: var(--ch-violet);
+}
+
+.proj-link:active {
+    color: var(--ch-yellow);
+}
+
+.proj-link:visited:active {
+    color: var(--ch-yellow);
+} */
 
 .container {
     margin: auto;
@@ -279,8 +295,11 @@ a:visited:active {
 
 .proj2 {
     align-items: end;
-    background-color: var(--ch-lightblue);
-    background-position: center bottom;
+    /* background-color: var(--ch-lightblue); */
+    background-image: url(../images/quotebox.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     display: grid;
     grid-area: proj2;
@@ -343,6 +362,22 @@ a:visited:active {
     padding-top: 7px;
 }
 
+.email-button {
+    background-color: #000;
+    border: none;
+    border-radius: 10%;
+    color: #fff;
+    padding: 2px;
+}
+
+.email-button:hover {
+    color: var(--ch-lightblue);
+}
+
+.email-button:active {
+    color: var(--ch-darkorange);
+}
+
 .footer-main {
     display: grid;
     grid-area: foot;
@@ -365,21 +400,10 @@ a:visited:active {
     text-align: center;
 }
 
-.email-button {
-    background-color: #000;
-    border: none;
-    border-radius: 10%;
-    color: #fff;
-    padding: 2px;
+#pixelart-copy {
+    font-size: 0.6em;
 }
 
-.email-button:hover {
-    color: var(--ch-lightblue);
-}
-
-.email-button:active {
-    color: var(--ch-darkorange);
-}
 
 @media (max-width: 1000px) {
     .container {
@@ -400,10 +424,9 @@ a:visited:active {
             "proj3"
             "proj4"
             "contact";
-            grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.36fr 0.18fr 0.18fr 0.72fr 1fr 1fr 1fr 1fr 0.5fr;
         padding-bottom: 50px;
         padding-top: 50px;
     }
 }
-
