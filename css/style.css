@@ -116,6 +116,7 @@ a:visited:active {
     position: static;
     text-align: center;
     transition: all 0.2s;
+    border: 1px solid #000;
 }
 
 .box:hover {
