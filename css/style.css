@@ -60,13 +60,13 @@ a:visited:active {
     color: var(--ch-violet);
 }
 
-.proj-link {
+/* .proj-link {
     color: #000;
 }
 
 .proj-link:visited {
     color: #000;
-}
+} */
 /*
 .proj-link:hover {
     color: var(--ch-violet);
@@ -297,9 +297,9 @@ a:visited:active {
     align-items: end;
     /* background-color: var(--ch-lightblue); */
     background-image: url(../images/quotebox.png);
-    background-repeat:no-repeat;
+    background-repeat: repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     display: grid;
     grid-area: proj2;
