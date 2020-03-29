@@ -60,14 +60,17 @@ a:visited:active {
     color: var(--ch-violet);
 }
 
-/* .proj-link {
-    color: #000;
+.proj-link {
+    color:#000;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .proj-link:visited {
     color: #000;
-} */
-/*
+}
+
 .proj-link:hover {
     color: var(--ch-violet);
 }
@@ -82,7 +85,7 @@ a:visited:active {
 
 .proj-link:visited:active {
     color: var(--ch-yellow);
-} */
+}
 
 .container {
     margin: auto;
@@ -108,7 +111,7 @@ a:visited:active {
 }
 
 .box {
-    border-radius: 2%;
+    border-radius: 6px;
     color: #000;
     position: static;
     text-align: center;
@@ -122,7 +125,7 @@ a:visited:active {
 }
 
 .smallbox {
-    border-radius: 2%/3%;
+    border-radius: 6px;
     transition: all 0.2s;
 }
 
@@ -172,7 +175,7 @@ a:visited:active {
 .navbox-links li>a {
     background-color: #000;
     border: none;
-    border-radius: 10%;
+    border-radius: 5px;
     color: #fff;
     margin-left: 10px;
     margin-right: 10px;
@@ -182,7 +185,7 @@ a:visited:active {
 .topbox {
     border: 1px solid;
     border-color: #000;
-    border-radius: 1%/4%;
+    border-radius: 6px;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     background-color: #FFF;
     display: grid;
@@ -365,7 +368,7 @@ a:visited:active {
 .email-button {
     background-color: #000;
     border: none;
-    border-radius: 10%;
+    border-radius: 5px;
     color: #fff;
     padding: 2px;
 }
