@@ -1,4 +1,4 @@
-console.log("Welcome");
+console.log("Welcome! Thank you for viewing my main website. ~ le-hu");
 
 // function isometrize(element) {
 
