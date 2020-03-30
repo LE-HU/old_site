@@ -288,7 +288,7 @@ a:visited:active {
 
 .proj1 {
     align-items: end;
-    background-image: url(../images/drumpad.png);
+    background-image: url(../images/drumpad.gif);
     background-repeat: repeat;
     background-position: center center;
     background-size: 100%;
@@ -311,6 +311,11 @@ a:visited:active {
     grid-area: proj2;
     justify-items: center;
     padding: 21px;
+    transition: all 0.2s;
+}
+
+.proj2:hover {
+    background-image: url(../images/dtquote.png);
 }
 
 .proj3 {
