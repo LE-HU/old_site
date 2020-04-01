@@ -301,7 +301,6 @@ a:visited:active {
 
 .proj2 {
     align-items: end;
-    /* background-color: var(--ch-lightblue); */
     background-image: url(../images/quotebox.png);
     background-repeat: repeat;
     background-position: center center;
@@ -311,7 +310,7 @@ a:visited:active {
     grid-area: proj2;
     justify-items: center;
     padding: 21px;
-    transition: all 0.2s;
+
 }
 
 .proj2:hover {
@@ -320,8 +319,10 @@ a:visited:active {
 
 .proj3 {
     align-items: end;
-    background-image: url("../images/photo.jpg");
-    background-position: center top;
+    background-image: url(../images/jscalc.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 100%;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     display: grid;
     grid-area: proj3;
@@ -329,10 +330,14 @@ a:visited:active {
     padding: 21px;
 }
 
+.proj3:hover {
+    background-image: url(../images/jscalc2.png);
+}
+
 .proj4 {
     align-items: end;
-    background-color: var(--ch-orange);
-    background-position: right bottom;
+    background-image: url("../images/photo.jpg");
+    background-position: center top;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     display: grid;
     grid-area: proj4;
