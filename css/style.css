@@ -72,19 +72,19 @@ a:visited:active {
 }
 
 .proj-link:hover {
-    color: var(--ch-violet);
+    color: var(--ch-yellow);
 }
 
 .proj-link:visited:hover {
-    color: var(--ch-violet);
+    color: var(--ch-yellow);
 }
 
 .proj-link:active {
-    color: var(--ch-yellow);
+    color: var(--ch-violet);
 }
 
 .proj-link:visited:active {
-    color: var(--ch-yellow);
+    color: var(--ch-violet);
 }
 
 .container {
