@@ -130,11 +130,11 @@ a:visited:active {
     transition: all 0.2s;
 }
 
-.smallbox:hover {
+/* .smallbox:hover {
     -webkit-transform: translate(4px, 4px);
     box-shadow: none;
     transform: translate(4px, 4px);
-}
+} */
 
 .navbox {
     background-color: #fff;
@@ -183,6 +183,11 @@ a:visited:active {
     padding: 4px;
 }
 
+
+.navbox-links li>a:hover {
+    color: var(--ch-yellow);
+}
+
 .topbox {
     border: 1px solid;
     border-color: #000;
@@ -213,20 +218,23 @@ a:visited:active {
 }
 
 .social-icons {
-    color: #000;
+    color: #FFF;
     grid-area: icons;
-    padding: 25px;
+    padding-top: 10px;
     padding-bottom: 0px;
-    padding-left: 0px;
     text-align: right;
+    background-color: black;
+    justify-self:end;
+    margin: 15px;
+    border-radius: 6px;
 }
 
 .topbox a {
-    color: #000;
+    color: #FFF;
 }
 
 .topbox a:visited {
-    color: #000;
+    color: #FFF;
 }
 
 .topbox a:hover {
@@ -240,7 +248,8 @@ a:visited:active {
 
 .social-icons li {
     display: inline;
-    padding: 0 0.2em;
+    padding: 5px;
+    margin: 5px;
 }
 
 .aside-projdesc-tech {
@@ -370,9 +379,9 @@ a:visited:active {
     padding: 21px;
 }
 
-#contact-box:hover {
+/* #contact-box:hover {
     box-shadow: none;
-}
+} */
 
 .contact-p {
     padding-top: 7px;
@@ -406,9 +415,9 @@ a:visited:active {
     position: static;
 }
 
-.footer-main:hover {
+/* .footer-main:hover {
     box-shadow: none;
-}
+} */
 
 .footer-main p {
     color: #000;
