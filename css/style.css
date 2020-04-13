@@ -102,10 +102,11 @@ a:visited:active {
     grid-template-areas:
         "navbox topbox topbox"
         "proj1 proj2 projdesc"
-        "proj3 proj4 contact";
-    /* "proj5 y z"; */
+        "proj3 proj4 contact"
+        "proj5 . .";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.36fr 1fr 1fr;
+    grid-template-rows: 0.36fr 1fr 1fr ;
+    /* should add 1fr row to show another row of projects */
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -129,12 +130,6 @@ a:visited:active {
     border-radius: 6px;
     transition: all 0.2s;
 }
-
-/* .smallbox:hover {
-    -webkit-transform: translate(4px, 4px);
-    box-shadow: none;
-    transform: translate(4px, 4px);
-} */
 
 .navbox {
     background-color: #fff;
@@ -345,11 +340,23 @@ a:visited:active {
 
 .proj4 {
     align-items: end;
+    background-image: url("../images/pomodoro.gif");
+    background-position: center center;
+    background-size: 100%;
+    box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
+    display: grid;
+    grid-area: proj4;
+    justify-items: center;
+    padding: 21px;
+}
+
+.proj5 {
+    align-items: end;
     background-image: url("../images/photo.jpg");
     background-position: center top;
     box-shadow: 1px 1px #000, 2px 2px #000, 3px 3px #000, 4px 4px #000;
     display: grid;
-    grid-area: proj4;
+    grid-area: proj5;
     justify-items: center;
     padding: 21px;
 }
